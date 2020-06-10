@@ -16,3 +16,11 @@ document.getElementsByClassName("header_hello"); // OUTPUT: HTMLCollection [h1.
 // Using querySelector
 document.querySelector("a"); // OUTPUT: <a href=​"https:​/​/​www.google.com">​Google​</a>​
 document.querySelector("li a"); // OUTPUT: <a href=​"https:​/​/​www.google.com">​Google Site​</a>​
+
+// Using JS to change a class appearance by toggling css class
+//   add this class to the class list of h1
+// document.body.querySelector("h1").classList.add("huge");
+// //   remove this class from the class list of h1
+// document.body.querySelector("h1").classList.remove("huge");
+// //   add/remove based on previous state of class list of h1
+document.body.querySelector("h1").classList.toggle("huge");
